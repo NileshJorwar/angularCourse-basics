@@ -1,6 +1,14 @@
 import { NgModule } from "@angular/core";
 
-@NgModule()
+import { BrowserModule } from "@angular/platform-browser";
+
+@NgModule(
+  {
+    imports: [
+      BrowserModule
+    ]
+  }
+)
 export class AppModule {
 
 }
