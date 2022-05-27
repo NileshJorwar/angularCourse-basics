@@ -1,3 +1,9 @@
+import { enableProdMode } from "@angular/core";
+// change detection in app
+
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 
-platformBrowserDynamic()
+import { AppModule } from './app/app.module'
+
+platformBrowserDynamic().bootstrapModule( AppModule )
+.catch(err => console.error(err));
