@@ -20,4 +20,8 @@ export class AppComponent
     // this.imgUrl = "https://picsum.photos/200" 
     this.imgUrl = (e.target as HTMLInputElement).value;
   }
+
+  logImage(event: string){
+      console.log(event);
+  }
 }
