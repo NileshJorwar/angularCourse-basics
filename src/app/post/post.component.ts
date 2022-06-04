@@ -51,20 +51,28 @@ export class PostComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
   }
 
   ngAfterContentInit() {
+      //runs once 
+
     console.log('ngAfterContentInit called')
-      
+    //hook refers to the projected content from parent comp
+    //runs after content has been initialized
+    //expr and bindings have been processed 
+    // at this point projected content is inserted into child comp  
   }
   ngAfterContentChecked(){
     console.log('ngAfterContentChecked called')
+    //runs after content has been checked for the changes
  
   }
   ngAfterViewInit(){
     console.log('ngAfterViewInit called')
- 
+      //runs once 
+
+    //runs when comp template has been initialized
   } 
   
   ngAfterViewChecked(){
-    console.log('ngAfterViewChecked called')
- 
+    console.log('ngAfterViewChecked called')  
+          //runs when comp template has been checked
   }
 }
