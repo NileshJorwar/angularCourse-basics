@@ -17,7 +17,9 @@ export class AppComponent
   pizza = {
     toppings:  ['bacon', 'paneer'],
     size: 'Large'
-  }
+  };
+  blueClass = false;
+
 
   getName(){
     return this.name;
