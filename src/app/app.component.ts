@@ -19,6 +19,7 @@ export class AppComponent
     size: 'Large'
   };
   blueClass = false;
+  fontSize=20;
 
 
   getName(){
