@@ -1,11 +1,17 @@
+<!-- <ng-template [ngIf]="blueClass">
+    The button in blue
+</ng-template> -->
+
+<p *ngIf="blueClass"> The button in blue </p>
+
 <button (click)="blueClass= !blueClass" [ngClass]="{ blue: blueClass}" [ngStyle]="{ 'font-size.px': fontSize }"> Change </button>
 
 <hr>
 
 <input (keyup)="changeImage($event)" [value]="imgUrl">
 
-<app-post [img]="imgUrl" (imageSelected)="logImage($event)">
-    <p> Some thing to display</p>
+<app-post *ngFor="let image of images; let i=index" [img]="image" (imageSelected)="logImage($event)">
+    <p> {{ i }} Some thing to display</p>
 
 </app-post>
 

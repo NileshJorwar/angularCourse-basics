@@ -11,6 +11,7 @@ export class AppComponent
 {
   name = 'nilesh jorwar'
   imgUrl = "https://picsum.photos/200/300";
+  images = ["https://picsum.photos/200/300", "https://picsum.photos/200/300", "https://picsum.photos/200/300"]
   currentDate = new Date();
   cost = 1000;
   temperature = 23.368;
